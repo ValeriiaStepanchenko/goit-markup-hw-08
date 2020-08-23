@@ -499,12 +499,22 @@ textarea {
   padding-right: 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -523,6 +533,7 @@ textarea {
 .header {
   position: relative;
   padding-top: 16px;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -534,8 +545,8 @@ textarea {
 .menu-wrapper {
   position: absolute;
   top: 100%;
-  height: 100%;
   text-align: center;
+  height: 453px;
   padding-top: 120px;
   padding-bottom: 60px;
   padding-right: 140px;
@@ -558,6 +569,10 @@ textarea {
   display: none;
 }
 
+.navigation {
+  margin-bottom: 60px;
+}
+
 .navigation-link {
   position: relative;
   display: inline-block;
@@ -574,10 +589,6 @@ textarea {
 
 .navigation-list-item:not(:last-child) {
   margin-bottom: 40px;
-}
-
-.header-utils {
-  margin-top: 60px;
 }
 
 .header-list-item:not(:last-child) {
