@@ -338,7 +338,7 @@ template {
   display: none;
 }
 
-ul .header-mail, ul .header-tel {
+.menu-wrapper ul .header-mail, .menu-wrapper ul .header-tel {
   display: flex;
   align-items: center;
   color: #757575;
@@ -494,6 +494,10 @@ textarea {
   color: #2196F3;
 }
 
+.link {
+  cursor: pointer;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -506,8 +510,6 @@ textarea {
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 }
 
@@ -541,6 +543,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .menu-wrapper {
@@ -549,31 +552,36 @@ textarea {
   left: 0;
   width: 100%;
   text-align: center;
-  height: 453px;
   padding-top: 60px;
+  padding-bottom: 60px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  /* Navigation */
+  /* Navigation-list+Address */
+  /* Navigation-link */
+  /* Address-link */
 }
 
-.menu-btn {
+.menu-wrapper .menu-btn {
   position: relative;
   z-index: 100;
   background-color: transparent;
   border: none;
 }
 
-.menu-btn-svg:hover,
-.menu-btn-svg:focus {
+.menu-wrapper .menu-btn-svg:hover,
+.menu-wrapper .menu-btn-svg:focus {
   fill: #2196F3;
 }
 
-.icon-close {
+.menu-wrapper .icon-close {
   display: none;
 }
 
-.navigation {
+.menu-wrapper .navigation {
   margin-bottom: 60px;
 }
 
-.navigation-link {
+.menu-wrapper .navigation-link {
   position: relative;
   display: inline-block;
   color: #212121;
@@ -583,46 +591,47 @@ textarea {
   letter-spacing: 0.02em;
 }
 
-.navigation-link:hover, .navigation-link:focus {
+.menu-wrapper .navigation-link:hover, .menu-wrapper .navigation-link:focus {
   color: #2196F3;
 }
 
-.navigation-list-item:not(:last-child) {
+.menu-wrapper .navigation-list-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
-.header-list-item:not(:last-child) {
+.menu-wrapper .header-list-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
-.header-link-svg {
+.menu-wrapper .header-utils {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-wrapper .header-link-svg {
   margin-right: 10px;
 }
 
-.header-link-svg.mail {
+.menu-wrapper .header-link-svg.mail {
   width: 16px;
   height: 11px;
 }
 
-.header-link-svg.tel {
+.menu-wrapper .header-link-svg.tel {
   width: 10px;
   height: 15px;
 }
 
-ul .header-mail:hover, ul .header-mail:focus {
+.menu-wrapper ul .header-mail:hover, .menu-wrapper ul .header-mail:focus {
   color: #2196F3;
   fill: #2196F3;
 }
 
-ul .header-tel:hover, ul .header-tel:focus {
+.menu-wrapper ul .header-tel:hover, .menu-wrapper ul .header-tel:focus {
   color: #2196F3;
   fill: #2196F3;
 }
 
-/* Navigation */
-/* Navigation-list+Address */
-/* Navigation-link */
-/* Address-link */
 ul .current {
   color: #2196F3;
 }
