@@ -559,11 +559,13 @@ textarea {
 }
 
 .navigation-link {
+  position: relative;
+  display: inline-block;
+  color: #212121;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: #212121;
 }
 
 .navigation-link:hover, .navigation-link:focus {
@@ -616,13 +618,14 @@ ul .current {
 
 ul .current::after {
   content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10;
   display: block;
-  background-color: #2196F3;
+  content: "";
   width: 100%;
   height: 4px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 8px;
+  background: #2196F3;
   border-radius: 2px;
 }
 

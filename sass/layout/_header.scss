@@ -65,11 +65,13 @@
   display: none;
 }
 .navigation-link{
+  position: relative;
+  display: inline-block;
+  color: #212121;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: #212121;
     
     &:hover,
     &:focus{
