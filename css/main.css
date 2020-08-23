@@ -496,74 +496,98 @@ textarea {
 
 .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   cursor: pointer;
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.header .container {
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.header {
+  position: relative;
+  padding-top: 16px;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Navigation */
-.navigation {
+.menu-wrapper {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  padding-right: 140px;
+  padding-left: 140px;
 }
 
-/* Navigation-list+Address */
-ul .navigation-link,
-ul .header-mail.link,
-ul .header-tel.link {
+.menu-btn {
+  position: relative;
+  z-index: 100;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-btn-svg:hover,
+.menu-btn-svg:focus {
+  fill: #2196F3;
+}
+
+.icon-close {
+  display: none;
+}
+
+.navigation-link {
+  position: relative;
   font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
-}
-
-.navigation-list {
-  display: flex;
-  padding-left: 0px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* Navigation-link */
-.navigation-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-ul .navigation-link {
   color: #212121;
-  padding-bottom: 0px;
 }
 
-ul .navigation-link:hover, ul .navigation-link:focus {
+.navigation-link:hover, .navigation-link:focus {
   color: #2196F3;
 }
 
-/* Address-link */
-.header-list {
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+.navigation-list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.header-utils {
+  margin-top: 60px;
 }
 
 .header-list-item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 16px;
 }
 
 .header-link-svg {
@@ -590,19 +614,24 @@ ul .header-tel:hover, ul .header-tel:focus {
   fill: #2196F3;
 }
 
+/* Navigation */
+/* Navigation-list+Address */
+/* Navigation-link */
+/* Address-link */
 ul .current {
   color: #2196F3;
 }
 
 ul .current::after {
   content: "";
+  position: absolute;
   display: block;
   background-color: #2196F3;
   width: 100%;
   height: 4px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 28px;
+  margin-top: 8px;
   border-radius: 2px;
 }
 
