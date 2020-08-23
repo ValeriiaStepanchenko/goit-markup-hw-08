@@ -1,0 +1,134 @@
+footer{
+    background-color: #2F303A;
+    
+      .container{
+        display: flex;
+        padding-bottom: 60px;
+        padding-top: 72px;
+  }
+}
+
+.footer-address-div{
+    margin-right: 69px;
+}
+.footer-address-div .logo{
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+footer .logo.link{
+    padding-top: 0px;
+}
+.logo-text{
+    color: $logo-footer-color;
+}
+.footer-address-list{
+    padding-left: 0;
+}
+.footer-list .social-link-svg{
+    fill: #FFFFFF;
+}
+
+ul .footer-address-link{
+  @extend %ul-footer-address;
+  color: $direction-link-color;
+    &:hover,
+    &:focus{
+    color: $hover-color;
+    }
+    
+}
+ul .footer-address-mail{
+  @extend %ul-footer-address;
+  color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus{
+    color: $hover-color;
+    }
+}
+
+ul .footer-address-tel{
+    @extend %ul-footer-address;
+    color: rgba(255, 255, 255, 0.6);
+      &:hover,
+      &:focus{
+      color: $hover-color;
+    }
+}
+
+.footer-join-div{
+    padding-top: 0px;
+}
+b{
+    color: $direction-link-color;
+}
+.footer-list{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 20px; 
+    margin-bottom: 0;
+}
+
+.footer-list-item{
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+      &:not(:last-child){
+        margin-right: 10px;
+  }
+      &.instagram:hover,
+      &.twitter:hover,
+      &.facebook:hover,
+      &.linkedin:hover{
+        background-color:$hover-color;
+  }
+}
+
+.footer-subscribe-div{
+    margin-left: 94px;
+}
+.footer-subscribe-form{
+    margin-top: 20px;
+}
+.footer-subscribe-form input[type=email]{
+    width: 358px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: transparent;
+    color: $logo-footer-color;
+}
+.footer-btn-subscribe{
+    min-width: 200px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    
+}
+.footer-btn-text,
+.footer-btn-svg{
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.footer-btn-svg{
+    width: 24px;
+    height: 24px;
+    fill: $logo-footer-color;
+    margin-left: 10px;    
+}

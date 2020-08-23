@@ -1,0 +1,41 @@
+body{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    color: $p-text-color;
+}
+h1,h2,h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+
+}
+address{
+    font-style: normal;
+}
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
+}
+input{
+    outline: none;
+}
+
+button{
+    outline: none;
+}
+textarea{
+    resize: none;
+}
