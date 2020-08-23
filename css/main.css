@@ -338,7 +338,7 @@ template {
   display: none;
 }
 
-.menu-wrapper ul .header-mail, .menu-wrapper ul .header-tel {
+ul .header-mail, ul .header-tel {
   display: flex;
   align-items: center;
   color: #757575;
@@ -555,33 +555,29 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  /* Navigation */
-  /* Navigation-list+Address */
-  /* Navigation-link */
-  /* Address-link */
 }
 
-.menu-wrapper .menu-btn {
+.menu-btn {
   position: relative;
   z-index: 100;
   background-color: transparent;
   border: none;
 }
 
-.menu-wrapper .menu-btn-svg:hover,
-.menu-wrapper .menu-btn-svg:focus {
+.menu-btn-svg:hover,
+.menu-btn-svg:focus {
   fill: #2196F3;
 }
 
-.menu-wrapper .icon-close {
+.icon-close {
   display: none;
 }
 
-.menu-wrapper .navigation {
+.navigation {
   margin-bottom: 60px;
 }
 
-.menu-wrapper .navigation-link {
+.navigation-link {
   position: relative;
   display: inline-block;
   color: #212121;
@@ -591,47 +587,51 @@ textarea {
   letter-spacing: 0.02em;
 }
 
-.menu-wrapper .navigation-link:hover, .menu-wrapper .navigation-link:focus {
+.navigation-link:hover, .navigation-link:focus {
   color: #2196F3;
 }
 
-.menu-wrapper .navigation-list-item:not(:last-child) {
+.navigation-list-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
-.menu-wrapper .header-list-item:not(:last-child) {
+.header-list-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
-.menu-wrapper .header-utils {
+.header-utils {
   display: flex;
   justify-content: center;
 }
 
-.menu-wrapper .header-link-svg {
+.header-link-svg {
   margin-right: 10px;
 }
 
-.menu-wrapper .header-link-svg.mail {
+.header-link-svg.mail {
   width: 16px;
   height: 11px;
 }
 
-.menu-wrapper .header-link-svg.tel {
+.header-link-svg.tel {
   width: 10px;
   height: 15px;
 }
 
-.menu-wrapper ul .header-mail:hover, .menu-wrapper ul .header-mail:focus {
+ul .header-mail:hover, ul .header-mail:focus {
   color: #2196F3;
   fill: #2196F3;
 }
 
-.menu-wrapper ul .header-tel:hover, .menu-wrapper ul .header-tel:focus {
+ul .header-tel:hover, ul .header-tel:focus {
   color: #2196F3;
   fill: #2196F3;
 }
 
+/* Navigation */
+/* Navigation-list+Address */
+/* Navigation-link */
+/* Address-link */
 ul .current {
   color: #2196F3;
 }
