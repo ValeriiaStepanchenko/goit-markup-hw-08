@@ -536,6 +536,7 @@ textarea {
 }
 
 .header-container {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -545,6 +546,7 @@ textarea {
 .menu-wrapper {
   position: absolute;
   top: 100%;
+  left: 0;
   width: 100%;
   text-align: center;
   height: 453px;

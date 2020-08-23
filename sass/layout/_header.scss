@@ -41,6 +41,7 @@
   border-bottom: 1px solid #ECECEC;
 }
 .header-container {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +50,7 @@
 .menu-wrapper{
   position: absolute;
   top: 100%;
+  left: 0;
   width: 100%;
     
   text-align: center;
