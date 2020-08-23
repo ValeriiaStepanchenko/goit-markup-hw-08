@@ -532,7 +532,6 @@ textarea {
 
 .header {
   position: relative;
-  padding-top: 16px;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -540,17 +539,16 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 16px;
 }
 
 .menu-wrapper {
   position: absolute;
   top: 100%;
+  width: 100%;
   text-align: center;
   height: 453px;
-  padding-top: 120px;
-  padding-bottom: 60px;
-  padding-right: 140px;
-  padding-left: 140px;
+  padding-top: 60px;
 }
 
 .menu-btn {
