@@ -1,61 +1,63 @@
-// @media screen and (min-width:480px){
-//     .container{
-//       width: 480px;
-//       margin: 0 auto;
-//     }
-//   }
-//   @media screen and (min-width:768px){
-//     .container{
-//       width: 768px;
-//     }
-//   }
-//   @media screen and (min-width:1200px){
-//     .container{
-//       width: 1200px;
-//     }
-//   }
-
 .hero{
-    background-color: rgba(47, 48, 58, 0.8);
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.8),
-        rgba(47, 48, 58, 0.8)
-    ),
-    url(../images/hero-img.jpg);
+  background-color: rgba(47, 48, 58, 0.8);
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8));
     background-size: cover;
-    max-width: 1600px;
+    background-repeat: no-repeat;
+    min-width: 320px;
     
-    &-container{
-        min-width: 320px;
-        // padding-left: 15px;
-        // padding-right: 15px;
-        margin: 0 auto;
-        text-align: center;
-        // padding-top: 213px;
-        // padding-bottom: 200px;
-    }
-    
-    &-title{
-        margin-top: 0;
-        margin-bottom: 45px;
 
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: $hero-main-color; 
+    &-container{
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto;
+      text-align: center;
+  }
+  
+  &-title{
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: $hero-main-color; 
+  }
 }
+@media screen and (max-wdth: 767px){
+  .hero{
+      background-image: url(../../images/mobile/hero-img.jpg);
+      height: 400px;
+      
+      &-container{
+          max-width: 767px;
+          margin: 0 auto;
+          text-align: center;
+          padding-top: 118px;
+          padding-bottom: 118px;
+      }
+      
+      &-title{
+          margin-top: 0;
+          margin-bottom: 45px;
+  
+          font-weight: 900;
+          font-size: 26px;
+          line-height: 1.62;
+          text-align: center;
+      }
+    }
 }
-@media screen and (max-width: 767px){
-    .hero-container{
-        min-width: 320px;
-    }
-    .hero-title{
-        margin-bottom: 30px;
-        font-size: 26px;
-        line-height: 1.61;
-    }
+
+@media screen and (min-device-pixel-ratio: 2), 
+screen and (min-resolution: 192dpi), 
+screen and (min-resolution: 2dppx),
+screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+  ),
+  url(../../images/mobile/hero-img@2x.jpg);
+  }  
 }
