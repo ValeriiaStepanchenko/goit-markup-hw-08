@@ -631,6 +631,12 @@ ul .header-tel:hover, ul .header-tel:focus {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
 /* Navigation */
 /* Navigation-list+Address */
 /* Navigation-link */
