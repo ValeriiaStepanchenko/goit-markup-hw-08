@@ -671,6 +671,22 @@ ul .header-tel:hover, ul .header-tel:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-list {
+    display: flex;
+    align-items: center;
+  }
+  .header-list-item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
 /* Navigation */
 /* Navigation-list+Address */
 /* Navigation-link */
