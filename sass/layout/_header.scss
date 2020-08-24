@@ -189,12 +189,19 @@ ul .header-tel{
       margin-bottom: 10px;
     }
   }
+// СТИЛИ ДЛЯ ДЕСКТОП
 
   @media screen and (min-width: 1200px){
     .header .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
+          
+        .logo.link{
+          margin-right: 85px;
+          font-size: 26px;
+          line-height: 1.19;
+        }
     }
     .header-list{
       display: flex;
@@ -209,7 +216,6 @@ ul .header-tel{
         display: flex;
         align-items: center;
     }
-    
     /* Navigation-list+Address */
     ul .navigation-link,
     ul .header-mail.link,
