@@ -73,6 +73,7 @@ ul .header-tel{
     fill: $hover-color;
   }
 }
+
 @media screen and (max-width: 767px){
   .container {
     display: flex;
@@ -270,22 +271,4 @@ ul .header-tel{
           height: 15px;
         }
     }
-      
-      ul .header-mail{
-        @extend %header-mail-tel;
-        &:hover,
-        &:focus{
-          color: $hover-color;
-          fill: $hover-color;
-        }
-      }
-      
-      ul .header-tel{
-        @extend %header-mail-tel;
-        &:hover,
-        &:focus{
-          color: $hover-color;
-          fill: $hover-color;
-        }
-      }
   }

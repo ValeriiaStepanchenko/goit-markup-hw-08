@@ -481,17 +481,25 @@ textarea {
 
 /* Логотип */
 .logo.link {
-  margin-right: 85px;
+  margin-right: 81px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #000000;
 }
 
 .logo-span {
   color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo.link {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-right: 85px;
+  }
 }
 
 .link {
@@ -677,6 +685,11 @@ ul .header-tel:hover, ul .header-tel:focus {
     justify-content: space-between;
     align-items: center;
   }
+  .header .container .logo.link {
+    margin-right: 85px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
   .header-list {
     display: flex;
     align-items: center;
@@ -685,12 +698,62 @@ ul .header-tel:hover, ul .header-tel:focus {
     margin-right: 30px;
     margin-bottom: 0;
   }
+  /* Navigation */
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  /* Navigation-list+Address */
+  ul .navigation-link,
+  ul .header-mail.link,
+  ul .header-tel.link {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.02em;
+  }
+  .navigation-list {
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  /* Navigation-link */
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  ul .navigation-link {
+    color: #212121;
+    padding-bottom: 0px;
+  }
+  ul .navigation-link:hover, ul .navigation-link:focus {
+    color: #2196F3;
+  }
+  /* Address-link */
+  .header-list {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .header-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .header-link-svg {
+    margin-right: 10px;
+  }
+  .header-link-svg.mail {
+    width: 16px;
+    height: 11px;
+  }
+  .header-link-svg.tel {
+    width: 10px;
+    height: 15px;
+  }
 }
 
-/* Navigation */
-/* Navigation-list+Address */
-/* Navigation-link */
-/* Address-link */
 ul .current {
   color: #2196F3;
 }
@@ -708,6 +771,25 @@ ul .current::after {
   border-radius: 2px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .hero {
   background-color: rgba(47, 48, 58, 0.8);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-img.jpg);
@@ -716,7 +798,6 @@ ul .current::after {
 }
 
 .hero-container {
-  width: 600px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -728,14 +809,22 @@ ul .current::after {
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 45px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-container {
+    min-width: 320px;
+  }
+  .hero-title {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.61;
+  }
 }
 
 .hero-button:hover, .hero-button:focus {
