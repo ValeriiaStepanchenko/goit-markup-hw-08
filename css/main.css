@@ -532,9 +532,6 @@ textarea {
   display: inline-block;
   color: #212121;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
 }
 
 .navigation-link:hover, .navigation-link:focus {
@@ -625,6 +622,11 @@ ul .header-tel:hover, ul .header-tel:focus {
   .header-list-item:not(:last-child) {
     margin-bottom: 16px;
   }
+  .navigation-link {
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
   .header-utils {
     display: flex;
     justify-content: center;
@@ -634,6 +636,38 @@ ul .header-tel:hover, ul .header-tel:focus {
 @media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .header-container .logo.link {
+    margin-right: 81px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  .menu-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .navigation {
+    margin-right: 84px;
+  }
+  .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .header-list-item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
