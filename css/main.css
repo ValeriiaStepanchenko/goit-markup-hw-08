@@ -1123,13 +1123,29 @@ section .container {
     margin-right: 30px;
     margin-bottom: 30px;
     /*  Задаём ширину элементов  */
-    flex-basis: calc((100% - 8 * 10px) / 2);
+    flex-basis: calc((100% - 8 * 5px) / 2);
   }
   .list-item:nth-child(2n+2) {
     margin-right: 0;
   }
   .list-item:nth-last-child(-n+2) {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section .container {
+    padding-top: 50px;
+  }
+  .list.features {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .list-item {
+    margin-bottom: 0;
+  }
+  .list-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 

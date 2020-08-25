@@ -59,7 +59,7 @@ section .container{
 .icon-astronaut::before{
     background-image: url(../images/astronaut1.svg);
 }
-
+// MOBILE
 @media screen and (max-width: 767px){
     section .container{
         padding-top: 60px;
@@ -68,6 +68,7 @@ section .container{
         margin-bottom: 30px;
     }
 }
+// TABLET
 @media screen and (min-width: 768px){
     section .container{
         padding-top: 33px;
@@ -78,14 +79,13 @@ section .container{
     flex-wrap: wrap;
     margin-top: 0;
     padding: 0;
-  
 }
     .list-item{
         width: 100%;
   margin-right: 30px;
   margin-bottom: 30px;
   /*  Задаём ширину элементов  */
-  flex-basis: calc((100% - 8 * 10px) / 2);
+  flex-basis: calc((100% - 8 * 5px) / 2);
     }
     // Убираем марджин для 2го и 4го
     .list-item:nth-child(2n+2){
@@ -95,4 +95,22 @@ section .container{
     .list-item:nth-last-child(-n+2){
         margin-bottom: 0;
     }
+}
+// DESKTOP
+@media screen and (min-width: 1200px){
+    section .container{
+        padding-top: 50px;
+    }
+    .list.features{
+        
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .list-item{
+        margin-bottom: 0;
+    }
+    .list-item:not(:last-child){
+        margin-right: 30px;
+    }
+    
 }
