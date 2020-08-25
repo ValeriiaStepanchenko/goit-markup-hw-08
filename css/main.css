@@ -1039,20 +1039,10 @@ ul .current::after {
 }
 
 section .container {
-  padding-top: 94px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
   justify-content: center;
-}
-
-.list.features {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.list-item {
-  width: 270px;
 }
 
 .list-item > img {
@@ -1085,6 +1075,7 @@ section .container {
 
 .list-item .list-title,
 .list-item b {
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1108,9 +1099,38 @@ section .container {
   background-image: url(../images/astronaut1.svg);
 }
 
-.list-title {
-  margin-top: 55px;
-  margin-bottom: 10px;
+@media screen and (max-width: 767px) {
+  section .container {
+    padding-top: 60px;
+  }
+  .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section .container {
+    padding-top: 33px;
+  }
+  .list.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 0;
+  }
+  .list-item {
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    /*  Задаём ширину элементов  */
+    flex-basis: calc((100% - 8 * 10px) / 2);
+  }
+  .list-item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+  .list-item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
 }
 
 .section-title {
