@@ -1346,6 +1346,8 @@ section .container {
   }
   .container .section-title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
   .team-list {
     flex-wrap: nowrap;
