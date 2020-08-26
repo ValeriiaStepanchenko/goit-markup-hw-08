@@ -1463,6 +1463,60 @@ section .container {
   padding-right: 41px;
 }
 
+@media screen and (max-width: 767px) {
+  .container.clients {
+    display: block;
+    padding-bottom: 60px;
+  }
+  .container.clients .section-title {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 30px;
+  }
+  .clients-list {
+    flex-wrap: wrap;
+  }
+  .clients-list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .clients-list-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .clients-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container.clients {
+    display: block;
+    padding-bottom: 60px;
+  }
+  .container.clients .section-title {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 30px;
+  }
+  .clients-list {
+    flex-wrap: wrap;
+  }
+  .clients-list-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .clients-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .clients-list-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+}
+
 .filter-btn {
   font-size: 16px;
   line-height: 1.62;
