@@ -139,8 +139,13 @@ color: $p-text-color;
     }
     .team-list-item{
         margin-bottom: 0;
+        width: 270px;
     }
     .team-list-item:not(:last-child){
         margin-right: 30px;
+    }
+    .team-list-item img{
+        width: 100%;
+        height: auto;
     }
 }
