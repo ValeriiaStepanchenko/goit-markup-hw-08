@@ -1,11 +1,3 @@
-// .our-team-section .container{
-//     // padding-bottom: 94px;
-//     // justify-content: center;
-// }
-.container .section-title{
-    margin-bottom: 50px;
-
-}
 .list-title{
     margin-top: 30px;
     margin-bottom: 10px;
@@ -131,5 +123,24 @@ color: $p-text-color;
         line-height: 1.17;
         letter-spacing: 0.03em;
         color: #212121;
+    }
+}
+// DESKTOP
+@media screen and (min-width: 1200px){
+    .our-team-section .container{
+        padding-bottom: 94px;
+        justify-content: center;
+    }
+    .container .section-title{
+        margin-bottom: 50px;
+    }
+    .team-list{
+        flex-wrap: nowrap;
+    }
+    .team-list-item{
+        margin-bottom: 0;
+    }
+    .team-list-item:not(:last-child){
+        margin-right: 30px;
     }
 }
