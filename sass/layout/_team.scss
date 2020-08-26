@@ -1,16 +1,11 @@
 // .our-team-section .container{
-//     padding-bottom: 94px;
-//     justify-content: center;
+//     // padding-bottom: 94px;
+//     // justify-content: center;
 // }
 .container .section-title{
     margin-bottom: 50px;
 
 }
-// .team-list{
-//     display: flex;
-//     justify-content: space-between; 
-//     padding-left: 0;
-// }
 .list-title{
     margin-top: 30px;
     margin-bottom: 10px;
@@ -85,14 +80,56 @@ color: $p-text-color;
             width: 206px;
             }
 }
+// MOBILE
 @media screen and (max-width: 767px){
     .our-team-section .container{
+        display: block;
         padding-bottom: 60px;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .section-title.team{
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: #212121;
     }
     .team-list-item:not(:last-child){
         margin-bottom: 30px;
     }
-    .section-title{
-        padding-top: 60px;
+    .team-list-item img{
+        width: 100%;
+        height: auto;
+    }
+}
+// TABLET
+@media screen and (min-width: 768px){
+    .team-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    }
+    .team-list-item{
+        margin-right: 30px;
+        margin-bottom: 30px;
+        /*  Задаём ширину элементов  */
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    // Убираем марджин для 2го и 4го
+    .team-list-item:nth-child(2n+2){
+        margin-right: 0;
+    }
+     // Убираем марджин у последних 2х
+    .team-list-item:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+    .section-title.team{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: #212121;
     }
 }
