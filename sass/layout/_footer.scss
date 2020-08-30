@@ -177,8 +177,22 @@ b{
     }
 }
 @media screen and (min-width: 768px) and (max-width:1199px){
+    footer .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-address-div{
+        flex-basis: 50%;
+    }
+    .footer-join-div{
+        flex-basis: 50%;
+    }
+    .footer-subscribe-div{
+        margin-top: 0;
+    }
     .footer-subscribe-form input[type=email]{
-        max-width: 450px;
+        width: 450px;
         margin-right: 0;
     }
     .footer-subscribe-form{
