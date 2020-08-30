@@ -102,7 +102,8 @@
         margin-bottom: 0;
     }
     .portfolio-list-item{
-        flex-basis: calc((100% - 30px) / 2);
+        width: 324px;
+        // flex-basis: calc((100% - 30px) / 2);
     }
     .portfolio-list-item img{
         width: 100%;

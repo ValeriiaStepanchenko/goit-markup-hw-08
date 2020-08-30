@@ -1711,7 +1711,7 @@ section .container {
     margin-bottom: 0;
   }
   .portfolio-list-item {
-    flex-basis: calc((100% - 30px) / 2);
+    width: 324px;
   }
   .portfolio-list-item img {
     width: 100%;
