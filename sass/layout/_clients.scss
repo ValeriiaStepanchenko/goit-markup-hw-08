@@ -30,10 +30,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    &:hover,
+    &:focus{
+      border-color: $hover-color;
+      fill: $hover-color;
+      color: $hover-color;
+    }
       
       &:hover .clients-list-link-svg,
       &:focus .clients-list-link-svg{
-        fill: $hover-color;
+        fill: $hover-color; 
     }
 }
 .clients-list-link-svg{
