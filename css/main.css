@@ -604,6 +604,7 @@ ul .header-tel:hover, ul .header-tel:focus {
   .menu-wrapper.is-open {
     display: block;
     transform: translateX(0);
+    z-index: 100;
   }
   .menu-btn {
     position: relative;
