@@ -836,9 +836,6 @@ ul .current::after {
   .filter-list {
     margin-bottom: 30px;
   }
-  .filter-list-item {
-    margin-bottom: 0;
-  }
   .filter-btn {
     padding-top: 6px;
     padding-right: 22px;
@@ -929,6 +926,9 @@ ul .current::after {
 @media screen and (min-width: 480px) {
   .portfolio-container {
     width: 480px;
+  }
+  .portfolio-item {
+    width: 450px;
   }
 }
 
