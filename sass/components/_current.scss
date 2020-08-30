@@ -16,12 +16,30 @@ ul .current{
     
     }
 }
-
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 767px){
     ul .current{
+        
+        &::after{
+        content: "";
+        bottom: -8px;
+    }
+    }
+}
+@media screen and (min-width: 768px){
+    ul .current{
+        
         &::after{
         content: "";
         bottom: -39px;
+    }
+    }
+}
+@media screen and (min-width: 1200px){
+    ul .current{
+        
+        &::after{
+        content: "";
+        bottom: -28px;
     }
     }
 }
