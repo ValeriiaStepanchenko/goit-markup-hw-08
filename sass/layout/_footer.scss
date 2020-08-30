@@ -132,3 +132,46 @@ b{
     fill: $logo-footer-color;
     margin-left: 10px;    
 }
+
+// MOBILE
+@media screen and (max-width: 767px){
+    footer{
+        // background-color: #2F303A;
+        
+          .container{
+            display: block;
+            padding-bottom: 60px;
+            padding-top: 60px;
+            text-align: center;
+      }
+            .logo.link{
+                display: block;
+                margin-right: 0;
+        // padding-top: 0px;
+    }
+    }
+
+    .footer-address-div{
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+    .footer-address-list-item:not(:last-child){
+        margin-bottom: 8px;
+    }
+     b{
+        font-size: 14px;
+        line-height: 1.14;
+    }
+    .footer-subscribe-div{
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    .footer-btn-subscribe{
+        margin-top: 20px;
+    }
+    .footer-subscribe-form input[type=email]{
+        width: 100%;
+        margin-right: 0;
+    }
+    
+}
