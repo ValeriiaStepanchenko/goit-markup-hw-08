@@ -932,6 +932,21 @@ ul .current::after {
   }
 }
 
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .portfolio-list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .portfolio-list-item img {
+    width: 100%;
+  }
+  .portfolio-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .portfolio-list-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
 .list-title {
   margin-top: 30px;
   margin-bottom: 10px;
