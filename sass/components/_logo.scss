@@ -2,6 +2,7 @@
 .logo{
   
     &.link{
+
       margin-right: 81px;
       font-family: $secondary-font;
       font-weight: 700;
@@ -15,10 +16,19 @@
       color: #2196F3;
     }
   }
+//   @media screen and (min-width: 768px){
+//     .logo{
+
+//       &.link{
+// display: block;
+// width: 141px;
+//       }
+//     }
+//   }
 
   @media screen and (min-width: 1200px){
     .logo{
-      display: block;
+
       &.link{
         font-size: 26px;
         line-height: 1.2;

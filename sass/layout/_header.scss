@@ -1,5 +1,5 @@
 .link{
-    // display: block;
+    display: block;
     cursor: pointer;
 }
 .container {
@@ -170,6 +170,8 @@ ul .header-tel{
         margin-right: 81px;
         font-size: 24px;
         line-height: 1.16;
+        display: block;
+        width: 141px;
       }
   }
 

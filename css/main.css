@@ -495,9 +495,6 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
-  .logo {
-    display: block;
-  }
   .logo.link {
     font-size: 26px;
     line-height: 1.2;
@@ -506,6 +503,7 @@ textarea {
 }
 
 .link {
+  display: block;
   cursor: pointer;
 }
 
@@ -664,6 +662,8 @@ ul .header-tel:hover, ul .header-tel:focus {
     margin-right: 81px;
     font-size: 24px;
     line-height: 1.16;
+    display: block;
+    width: 141px;
   }
   .menu-wrapper {
     display: flex;
@@ -767,7 +767,7 @@ ul .current::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 10;
+  bottom: -45px;
   display: block;
   content: "";
   width: 100%;
