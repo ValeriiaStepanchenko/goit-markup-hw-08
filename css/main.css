@@ -495,6 +495,9 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
+  .logo {
+    display: block;
+  }
   .logo.link {
     font-size: 26px;
     line-height: 1.2;
@@ -1654,7 +1657,9 @@ footer .container {
 }
 
 footer .logo.link {
+  display: block;
   padding-top: 0px;
+  margin-right: 0;
 }
 
 .logo-text {
@@ -1775,7 +1780,7 @@ b {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   footer .container {
     display: block;
     padding-bottom: 60px;

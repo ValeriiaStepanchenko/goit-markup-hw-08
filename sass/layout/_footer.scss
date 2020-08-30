@@ -16,7 +16,9 @@ footer{
     margin-bottom: 20px;
 }
 footer .logo.link{
+    display: block;
     padding-top: 0px;
+    margin-right: 0;
 }
 .logo-text{
     color: $logo-footer-color;
@@ -133,8 +135,8 @@ b{
     margin-left: 10px;    
 }
 
-// MOBILE
-@media screen and (max-width: 767px){
+// MOBILE + TABLET
+@media screen and (max-width: 1199px){
     footer{
         // background-color: #2F303A;
         
