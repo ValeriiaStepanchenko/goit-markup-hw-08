@@ -134,12 +134,18 @@ b{
     fill: $logo-footer-color;
     margin-left: 10px;    
 }
+@media screen and (max-width: 479px){
+    footer{
+        box-sizing: border-box;
+        min-width: 480px;
+    }
+}
 
 // MOBILE + TABLET
 @media screen and (max-width: 1199px){
     footer{
-        // background-color: #2F303A;
-        
+        box-sizing: border-box;
+
           .container{
             display: block;
             padding-bottom: 60px;
