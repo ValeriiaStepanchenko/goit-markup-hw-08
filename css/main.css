@@ -1601,6 +1601,21 @@ section .container {
   .filter-list {
     margin-bottom: 30px;
   }
+  .filter-btn {
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-btn {
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+  }
 }
 
 .portfolio-container {
@@ -1615,7 +1630,6 @@ section .container {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 94px;
@@ -1691,6 +1705,7 @@ section .container {
   }
   .portfolio-list {
     margin-bottom: 0;
+    justify-content: center;
   }
   .portfolio-list-item:not(:last-child) {
     margin-bottom: 30px;
@@ -1711,16 +1726,14 @@ section .container {
     margin-bottom: 0;
   }
   .portfolio-list-item {
-    width: 324px;
+    width: 100%;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .portfolio-list-item:nth-last-child(-n+2) {
+    margin-bottom: 30px;
   }
   .portfolio-list-item img {
     width: 100%;
-  }
-  .portfolio-list-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  .portfolio-list-item:not(:nth-child(2n)) {
-    margin-right: 30px;
   }
 }
 

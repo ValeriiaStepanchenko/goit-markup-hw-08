@@ -70,4 +70,18 @@
     .filter-list{
         margin-bottom: 30px;
     }
+    .filter-btn{
+        padding-top: 6px;
+        padding-right: 22px;
+        padding-bottom: 6px;
+        padding-left: 22px;
+        }
+}
+@media screen and (min-width: 1200px){
+    .filter-btn{
+        padding-top: 6px;
+        padding-right: 22px;
+        padding-bottom: 6px;
+        padding-left: 22px;
+        }
 }
