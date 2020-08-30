@@ -1596,13 +1596,17 @@ section .container {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .filter-list {
     margin-bottom: 30px;
   }
 }
 
-.portfolio-section {
+.portfolio-container {
+  display: block;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1669,6 +1673,27 @@ section .container {
 
 .portfolio-link:hover .overlay {
   top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-container {
+    width: 100%;
+  }
+  .portfolio-list {
+    margin-bottom: 0;
+  }
+  .portfolio-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .portfolio-list-item {
+    margin-right: 0;
+    width: 450px;
+    height: auto;
+  }
+  .portfolio-list-item img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 footer {

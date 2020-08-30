@@ -50,9 +50,11 @@
 
 @media screen and (max-width: 767px){
     .filter-list{
+        // display: block;
         flex-wrap: wrap;
         justify-content: flex-start;
         margin-bottom: 40px;
+        // box-sizing: border-box;
     }
     .filter-btn{
     padding-top: 6px;
@@ -64,7 +66,7 @@
 .filter-list-item:nth-child(-n + 3){
     margin-bottom: 15px;
 }
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     .filter-list{
         margin-bottom: 30px;
     }
