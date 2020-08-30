@@ -1600,6 +1600,9 @@ section .container {
   .filter-list {
     margin-bottom: 30px;
   }
+  .filter-list-item {
+    margin-bottom: 0;
+  }
   .filter-btn {
     padding-top: 6px;
     padding-right: 22px;
@@ -1687,15 +1690,21 @@ section .container {
   top: 0;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .portfolio-container {
-    box-sizing: border-box;
     width: 480px;
   }
-  .overlay p {
-    font-size: 16px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-container {
+    width: 1200px;
   }
 }
 
