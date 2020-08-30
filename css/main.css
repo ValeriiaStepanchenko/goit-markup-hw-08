@@ -1437,55 +1437,31 @@ section .container {
 .clients-list-link-svg.client-first {
   width: 45px;
   height: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 63px;
-  padding-right: 63px;
 }
 
 .clients-list-link-svg.client-second {
   width: 40px;
   height: 52px;
-  padding-top: 19px;
-  padding-bottom: 19px;
-  padding-left: 65px;
-  padding-right: 65px;
 }
 
 .clients-list-link-svg.client-third {
   width: 41px;
   height: 43px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 64px;
-  padding-right: 64px;
 }
 
 .clients-list-link-svg.client-fourth {
   width: 80px;
   height: 42px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 45px;
-  padding-right: 45px;
 }
 
 .clients-list-link-svg.client-fifth {
   width: 59px;
   height: 47px;
-  padding-top: 22px;
-  padding-bottom: 21px;
-  padding-left: 56px;
-  padding-right: 55px;
 }
 
 .clients-list-link-svg.client-sixth {
   width: 89px;
   height: 46px;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 41px;
-  padding-right: 41px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1592,6 +1568,35 @@ section .container {
 
 .filter-list-item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  .filter-btn {
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+  }
+}
+
+.filter-list-item:nth-child(-n + 3) {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .filter-list {
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .portfolio-list {
@@ -1833,6 +1838,18 @@ b {
   .footer-subscribe-form input[type=email] {
     width: 100%;
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe-form input[type=email] {
+    max-width: 450px;
+    margin-right: 0;
+  }
+  .footer-subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

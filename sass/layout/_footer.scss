@@ -175,5 +175,16 @@ b{
         width: 100%;
         margin-right: 0;
     }
-    
+}
+@media screen and (min-width: 768px) and (max-width:1199px){
+    .footer-subscribe-form input[type=email]{
+        max-width: 450px;
+        margin-right: 0;
+    }
+    .footer-subscribe-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
