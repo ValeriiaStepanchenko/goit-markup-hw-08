@@ -934,6 +934,9 @@ ul .current::after {
 }
 
 @media screen and (min-width: 768px) {
+  .portfolio-list {
+    margin-bottom: 0;
+  }
   .portfolio-list-item {
     flex-basis: calc((100% - 30px) / 2);
   }
