@@ -1631,10 +1631,10 @@ section .container {
   flex-wrap: wrap;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 94px;
 }
 
 .portfolio-list-item {
+  width: 100%;
   outline: none;
 }
 
