@@ -1,5 +1,6 @@
 .backdrop {
   @extend %backdrop;
+  overflow-y: scroll;
 
   &.is-hidden {
     visibility: hidden;
@@ -9,17 +10,18 @@
 }
 .contact-form {
   position: absolute;
-  top: 50%;
+  // top: 50%;
+  top: 93px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   max-width: 450px;
   width: 100%;
   min-height: 609px;
   // height: 529px;
-
   padding: 40px;
 
   background-color: $hero-main-color;
@@ -179,18 +181,25 @@
   }
 }
 @media screen and (min-width: 768px) {
-  // переделать позиционирование
-}
-
-@media screen and (min-width: 1200px) {
   .contact-form {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // box-sizing: border-box;
+    // display: flex;
+    // flex-direction: column;
     max-width: 528px;
     width: 100%;
     min-height: 581px;

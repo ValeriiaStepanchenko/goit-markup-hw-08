@@ -889,6 +889,10 @@ ul .current::after {
   cursor: pointer;
 }
 
+.backdrop {
+  overflow-y: scroll;
+}
+
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -897,12 +901,10 @@ ul .current::after {
 
 .contact-form {
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   max-width: 450px;
   width: 100%;
   min-height: 609px;
@@ -1060,15 +1062,17 @@ ul .current::after {
   color: #2196f3;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contact-form {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form {
     max-width: 528px;
     width: 100%;
     min-height: 581px;
