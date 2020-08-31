@@ -758,10 +758,6 @@ ul .current::after {
   cursor: pointer;
 }
 
-.contact-form-button {
-  margin-bottom: 39px;
-}
-
 .filter-btn {
   font-size: 16px;
   font-weight: 500;

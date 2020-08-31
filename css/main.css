@@ -889,10 +889,6 @@ ul .current::after {
   cursor: pointer;
 }
 
-.contact-form-button {
-  margin-bottom: 39px;
-}
-
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -907,8 +903,9 @@ ul .current::after {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 370px;
-  height: 529px;
+  max-width: 450px;
+  width: 100%;
+  min-height: 609px;
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -921,7 +918,7 @@ ul .current::after {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 30px;
@@ -1044,6 +1041,7 @@ ul .current::after {
   border: 1px solid #212121;
   border-radius: 2px;
   margin-left: 10px;
+  flex-shrink: 0;
 }
 
 .contact-form-custom-checkbox-icon {
@@ -1053,13 +1051,31 @@ ul .current::after {
 }
 
 .contact-form-checkbox-span {
-  margin-left: 9px;
-  font-size: 14px;
+  margin-left: 8px;
+  font-size: 12px;
 }
 
 .contact-form-checkbox-span-link {
   text-decoration: underline;
-  color: #2196F3;
+  color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 528px;
+    width: 100%;
+    min-height: 581px;
+  }
+  .contact-form-title {
+    line-height: 1.15;
+  }
 }
 
 section .container {
