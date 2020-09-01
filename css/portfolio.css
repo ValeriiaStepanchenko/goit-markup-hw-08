@@ -485,7 +485,7 @@ textarea {
 
 .header {
   position: relative;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .navigation-link {
@@ -638,7 +638,7 @@ ul .header-tel:hover, ul .header-tel:focus {
 @media screen and (min-width: 1200px) {
   .header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
   .header .container .logo.link {
@@ -658,6 +658,7 @@ ul .header-tel:hover, ul .header-tel:focus {
   .navigation {
     display: flex;
     align-items: center;
+    margin-right: 298px;
   }
   /* Navigation-list+Address */
   ul .navigation-link,
